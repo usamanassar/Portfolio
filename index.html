@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M Usama Nasar- Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name" style="color: white;">
+        M Usama Nasar
+        <div class="contact_info">
+          <img src="html_finalprojimages/envelope.png" alt="Email icon">
+         musamanasar765@gmail.com
+        </div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="Phone icon">
+          +1 345 676 4598
+        </div>
+      </div>
+
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="./html_finalprojimages/Your paragraph text (3).png" class="profile_image" alt="Profile GIF">
+    </div>
+    <div>
+      <h1>
+        Hi, I'm M Usama! <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving hand">
+      </h1>
+      <p>
+        I am a full stack developer with 1 years of experience in both application and presentation layers.
+        I have worked on applications and microservices deployed on IBM Cloud.
+        I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png" alt="HTML logo">
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg" alt="JavaScript logo">
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="html_finalprojimages/css3.png" alt="CSS logo">
+        <h6>CSS</h6>
+        <p>2 years experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>AutoArcane</h3>
+        <ul>
+          <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant.</li>
+        </ul>
+      </div>
+      <hr>
+       <div class="project-card">
+        <h3>Chatapp</h3>
+        <ul>
+          <li>I have used firebase database and kotlin programming in it, it contains user authentication profile and we have used cardviews and rec.</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>Calculator</h3>
+        <ul>
+          <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant.</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <ul>
+          <li>Created a styled portfolio website for developers with interactive projects and recommendation sections.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Usama is a very quick learner and quickly grasps key concepts of Web development. 
+        She has great attitude and is an excellent team player.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Working with Usama has been an awesome experience. 
+        She is highly knowledgeable and ensures quality in every project.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Usaxma is a committed resource with deep domain knowledge. 
+        She will be an asset for any organisation.
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" placeholder="Name (Optional)">
+        <textarea id="new_recommendation" rows="6" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <div class="iconbutton">
+    <a href="#home">
+      <img src="html_finalprojimages/home.png" width="30px" alt="Home icon">
+    </a>
+  </div>
+
+  <!-- Pop-up -->
+  <div class="popup" id="popup">
+    <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark icon">
+    <h3>Thank you for your recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+</html>

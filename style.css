@@ -1,0 +1,193 @@
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+#home {
+  background-color: #7600bc;
+  margin: -1cm;
+  padding: 2cm 0;
+  height: 5mm;
+}
+.topmenu {
+  color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.topmenu:hover {
+  color: white;
+  text-decoration: underline;
+}
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+.profile_name {
+  float: left;
+  padding-left: 2cm;
+  font-size: 24px;
+  font-weight: bold;
+}
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.contact_info img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* Titles */
+h2 {
+  font-size: 40px;
+  color: #7600bc;
+  margin: 30px 60px 0;
+  text-align: center;
+}
+
+/* About Me */
+.container {
+  display: flex;
+  margin-right: 10%;
+}
+#about-me h1 {
+  font-size: 50px;
+  margin-top: 60px;
+  color: #7600bc;
+}
+#about-me p {
+  font-size: 20px;
+  color: gray;
+}
+.profile_image {
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+  border-radius:200px; ;
+}
+
+/* Skills */
+.all_skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill {
+  border: 1px solid gray;
+  border-radius: 6px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  width: 150px;
+  box-shadow: 0 3px 10px gray;
+}
+.skill img {
+  height: 35px;
+}
+
+/* Projects */
+.projects-container {
+  margin: 30px 60px;
+}
+.projects-container hr {
+  border: 1px solid lightgray;
+}
+.project-card h3 {
+  font-size: 22px;
+}
+.project-card li {
+  font-size: 18px;
+}
+
+/* Recommendations */
+.all_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.recommendation {
+  font-style: italic;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px lightgray;
+  margin: 10px;
+}
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+}
+
+/* Scroll to Top Button */
+.iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Pop-up */
+.popup {
+  width: 400px;
+  background-color: #e8bcf0;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  visibility: hidden;
+}
+.popup img {
+  margin-top: 20px;
+}
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 20px auto;
+}
+.popup button:hover {
+  background-color: #7600bc;
+  color: white;
+}
+
+/* Recommendation Form */
+input, textarea {
+  margin: 10px;
+  width: 100%;
+}
+fieldset {
+  padding: 20px;
+  border: thin solid #ccc;
+  width: 60%;
+}
+button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7600bc;
+  color: #fff;
+}
