@@ -54,21 +54,28 @@ h2 {
 .container {
   display: flex;
   margin-right: 10%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #about-me h1 {
   font-size: 50px;
   margin-top: 60px;
   color: #7600bc;
+  text-align: center;
 }
 #about-me p {
   font-size: 20px;
   color: gray;
+  text-align: center;
+  padding: 0 20px;
 }
 .profile_image {
   height: 350px;
   width: 350px;
   margin: 20px;
-  border-radius:200px; ;
+  border-radius: 200px;
+  object-fit: cover;
 }
 
 /* Skills */
@@ -150,9 +157,13 @@ h2 {
   text-align: center;
   position: fixed;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
 }
 .popup img {
   margin-top: 20px;
+  max-width: 100%;
 }
 .popup button {
   background-color: #fff;
@@ -169,7 +180,8 @@ h2 {
 }
 
 /* Recommendation Form */
-input, textarea {
+input,
+textarea {
   margin: 10px;
   width: 100%;
 }
@@ -177,6 +189,8 @@ fieldset {
   padding: 20px;
   border: thin solid #ccc;
   width: 60%;
+  max-width: 600px;
+  margin: auto;
 }
 button {
   background-color: #fff;
@@ -190,4 +204,86 @@ button {
 button:hover {
   background-color: #7600bc;
   color: #fff;
+}
+
+/* -------------------- Responsive -------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  #home {
+    padding: 1.5cm 0;
+    margin: 0;
+  }
+  .profile_name {
+    float: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  .topdiv {
+    float: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .topmenu {
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+  }
+  h2 {
+    font-size: 32px;
+    margin: 20px;
+  }
+  #about-me h1 {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  .profile_image {
+    height: 280px;
+    width: 280px;
+  }
+  .projects-container {
+    margin: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #home {
+    padding: 1cm 0;
+  }
+  .profile_name {
+    font-size: 20px;
+  }
+  .profile_name .contact_info {
+    font-size: 13px;
+    justify-content: center;
+  }
+  .topmenu {
+    font-size: 16px;
+    padding: 8px;
+  }
+  #about-me h1 {
+    font-size: 28px;
+  }
+  #about-me p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .profile_image {
+    height: 200px;
+    width: 200px;
+  }
+  .skill {
+    width: 120px;
+    margin: 10px;
+  }
+  .project-card li {
+    font-size: 16px;
+  }
+  fieldset {
+    width: 90%;
+  }
+  .popup {
+    width: 90%;
+  }
 }
