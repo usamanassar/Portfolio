@@ -3,7 +3,7 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  outputFileTracingRoot: path.join(__dirname),
+  ...(process.env.VERCEL ? {} : { outputFileTracingRoot: path.resolve(__dirname) }),
 };
 
 export default nextConfig;
